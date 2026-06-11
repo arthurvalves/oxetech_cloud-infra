@@ -1,0 +1,23 @@
+# Terraform state e lock
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+*.tfstate.*.backup
+
+# Arquivos com segredos — NUNCA versione
+terraform.tfvars
+*.auto.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Lambda zip gerado localmente
+modules/compute/lambda_function.zip
+bonus/lambda_function.zip
+
+# macOS / IDE
+.DS_Store
+.idea/
+*.swp
